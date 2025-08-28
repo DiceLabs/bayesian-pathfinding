@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+**/.venv/
+**/venv/
+.env
+
+# Editors/OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Build/logs
+build/
+devel/
+logs/
+
+# Large artifacts (keep out of git)
+*.bag
+*.mp4
+*.mov
+*.avi
+data/raw/
+media/videos/
