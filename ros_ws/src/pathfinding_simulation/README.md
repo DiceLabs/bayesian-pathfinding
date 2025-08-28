@@ -30,7 +30,7 @@ A ROS package implementing Multi-Heuristic A* (MHA*) pathfinding with Bayesian o
 1. **Clone the repository:**
 ```bash
 cd ~/catkin_ws/src
-git clone <repo-url> pathfinding_simulation
+git clone https://github.com/DiceLabs/bayesian-pathfinding.git pathfinding_simulation
 ```
 
 2. **Install Python dependencies:**
