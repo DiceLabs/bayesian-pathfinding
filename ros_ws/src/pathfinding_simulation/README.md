@@ -136,6 +136,12 @@ rosrun rviz rviz -d ~/catkin_ws/src/pathfinding_simulation/rviz/pathfinding.rviz
 
 **Note**: Ensure the real robot is properly calibrated and the workspace is clear of obstacles before running autonomous navigation.
 
+## Real World Demo
+
+Here is a picture from the real robot experiment:
+
+![Real world demo](ros_ws/src/pathfinding_simulation/InShot_202ros_ws/media/realworld.jpg)
+
 ### Generating Occupancy Grids
 
 To generate occupancy grid maps from STL mesh files:
