@@ -210,35 +210,63 @@ For real Unitree Go1 deployment:
 
 ```
 pathfinding_simulation/
-├── src/pathfinding_simulation/
-│   ├── pathfinding/
-│   │   └── mhastar.py              # Multi-Heuristic A* implementation
-│   ├── grid/
-│   │   ├── grid_generator_open3d.py # Grid generation from STL meshes
-│   │   ├── node.py                 # Grid node representation
-│   │   └── make_occupancy.py       # Standalone occupancy grid generator
-│   ├── fields/
-│   │   └── repulsive_field.py      # Repulsive potential field computation
-│   ├── utils/
-│   │   ├── bayesian_repulsion_updater.py # OpenAI-based Bayesian analysis
-│   │   ├── bim_integration.py      # BIM data integration
-│   │   └── dynamic_repulsion_manager.py # Dynamic obstacle management
-├── pathfinding_node.py             # Main pathfinding ROS node
-├── path_follower_node.py           # Path following controller
-├── pathfinding_walker.py           # Real robot pathfinding walker
+├── CMakeLists.txt
+├── package.xml
+├── setup.py
+├── README.md
+├── config/
+│   └── diff_drive_controller.yaml  # Robot controller configuration
 ├── launch/
+│   ├── amcl.launch                 # AMCL localization
 │   ├── bim_world.launch           # TurtleBot3 simulation launch
 │   ├── navigation.launch          # TurtleBot3 navigation
-│   ├── robot_simulation.launch    # Go1 simulation launch
 │   ├── robot_navigation.launch    # Go1 navigation
-│   └── amcl.launch               # AMCL localization
+│   └── robot_simulation.launch    # Go1 simulation launch
+├── maps/
+│   ├── dicelab_map.pgm            # Generated occupancy grid map
+│   └── dicelab_map.yaml           # Map metadata
+├── models/
+│   └── dicelab_bim/               # BIM models and data
+│       ├── meshes/
+│       │   ├── dicelab_BIM.stl    # Main BIM mesh file
+│       │   ├── dicelab_BIM.dae    # Collada format
+│       │   ├── dicelab_BIM.fbx    # FBX format
+│       │   ├── extracted_objects.json           # BIM object data
+│       │   └── extracted_objects_with_danger.json # Bayesian danger data
+│       ├── model.config           # Gazebo model configuration
+│       └── model.sdf              # SDF model definition
 ├── rviz/
 │   └── pathfinding.rviz          # RViz configuration for pathfinding
+├── scripts/
+│   ├── pathfinding_node          # Main pathfinding ROS node (executable)
+│   ├── path_follower_node        # Path following controller (executable)
+│   └── smha_star_server          # SMHA* server (executable)
+├── src/pathfinding_simulation/
+│   ├── __init__.py
+│   ├── pathfinding_node.py       # Main pathfinding ROS node
+│   ├── path_follower_node.py     # Path following controller
+│   ├── pathfinding_walker.py     # Real robot pathfinding walker
+│   ├── pathfinding/
+│   │   ├── __init__.py
+│   │   └── mhastar.py            # Multi-Heuristic A* implementation
+│   ├── grid/
+│   │   ├── __init__.py
+│   │   ├── grid_generator_open3d.py # Grid generation from STL meshes
+│   │   ├── node.py               # Grid node representation
+│   │   └── make_occupancy.py     # Standalone occupancy grid generator
+│   ├── fields/
+│   │   ├── __init__.py
+│   │   ├── repulsive_field.py    # Repulsive potential field computation
+│   │   └── dynamic_repulsion_manager.py # Dynamic obstacle management
+│   └── utils/
+│       ├── __init__.py
+│       ├── bayesian_repulsion_updater.py # OpenAI-based Bayesian analysis
+│       ├── bim_integration.py    # BIM data integration
+│       └── extract_fbx_objects.py # FBX object extraction utility
 ├── srv/
 │   └── StartGoalPath.srv         # Path planning service definition
-├── models/                       # 3D models and BIM data
-├── maps/                        # Generated occupancy grid maps
-└── worlds/                      # Gazebo world files
+└── worlds/
+    └── dicelab.world             # Gazebo world file
 ```
 
 ## Algorithm Details
