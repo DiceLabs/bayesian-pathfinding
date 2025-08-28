@@ -140,7 +140,7 @@ rosrun rviz rviz -d ~/catkin_ws/src/pathfinding_simulation/rviz/pathfinding.rviz
 
 Here is a picture from the real robot experiment:
 
-![Real world demo](ros_ws/src/pathfinding_simulation/InShot_202ros_ws/media/realworld.jpg)
+![Real world demo](InShot_202ros_ws/media/realworld.jpg)
 
 ### Generating Occupancy Grids
 
