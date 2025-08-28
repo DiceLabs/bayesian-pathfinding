@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="dicelab_bim">
+    <static>true</static>
+
+    <link name="bim_link">
+      <!-- Visual Element -->
+      <visual name="bim_visual">
+        <geometry>
+          <mesh>
+            <uri>model://dicelab_bim/meshes/dicelab_BIM.stl</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <lighting>true</lighting>
+        </material>
+      </visual>
+
+      <!-- Collision Element -->
+      <collision name="bim_collision">
+        <geometry>
+          <mesh>
+            <uri>model://dicelab_bim/meshes/dicelab_BIM.stl</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <collide_without_contact>true</collide_without_contact>
+          </contact>
+          <bounce/>
+          <friction>
+            <ode>
+              <mu>1.0</mu>
+              <mu2>1.0</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+    </link>
+  </model>
+</sdf>

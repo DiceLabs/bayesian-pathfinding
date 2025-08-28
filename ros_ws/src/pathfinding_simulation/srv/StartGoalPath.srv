@@ -1,0 +1,8 @@
+# Request (sent to the service)
+geometry_msgs/Point start
+geometry_msgs/Point goal
+
+---
+
+# Response (returned from the service)
+nav_msgs/Path path

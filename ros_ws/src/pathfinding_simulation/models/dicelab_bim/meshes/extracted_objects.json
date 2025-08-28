@@ -1,0 +1,393 @@
+{
+    "Capsule": {
+        "name": "Capsule",
+        "type": "MESH",
+        "location": [
+            3.6749815940856934,
+            1.8076457977294922,
+            0.15699000656604767
+        ],
+        "dimensions": [
+            0.3194099962711334,
+            0.6388199925422668,
+            0.3194099962711334
+        ],
+        "rotation": [
+            1.570796251296997,
+            -0.0,
+            0.0
+        ],
+        "family_name": "capsule",
+        "danger_coefficient": null,
+        "bayesian_coefficient": null,
+        "class_name": null
+    },
+    "Workstations": {
+        "name": "Workstations",
+        "type": "MESH",
+        "location": [
+            1.607980728149414,
+            1.3776473999023438,
+            0.22798997163772583
+        ],
+        "dimensions": [
+            0.8078303933143616,
+            0.8078303933143616,
+            0.8078303933143616
+        ],
+        "rotation": [
+            1.570796251296997,
+            -0.0,
+            0.0
+        ],
+        "family_name": "workstations",
+        "danger_coefficient": null,
+        "bayesian_coefficient": null,
+        "class_name": null
+    },
+    "wall10": {
+        "name": "wall10",
+        "type": "MESH",
+        "location": [
+            0.7412273287773132,
+            0.46446678042411804,
+            1.9857888221740723
+        ],
+        "dimensions": [
+            0.6583837270736694,
+            0.12382568418979645,
+            3.657599687576294
+        ],
+        "rotation": [
+            -4.371138473402425e-08,
+            1.1724465943260495e-15,
+            -1.5707961320877075
+        ],
+        "family_name": "wall10",
+        "danger_coefficient": null,
+        "bayesian_coefficient": null,
+        "class_name": null
+    },
+    "wall11": {
+        "name": "wall11",
+        "type": "MESH",
+        "location": [
+            1.3566210269927979,
+            0.4264063835144043,
+            1.9857921600341797
+        ],
+        "dimensions": [
+            1.0470194816589355,
+            0.12382571399211884,
+            3.6576006412506104
+        ],
+        "rotation": [
+            7.549790126404332e-08,
+            5.024295358284445e-15,
+            3.141592502593994
+        ],
+        "family_name": "wall11",
+        "danger_coefficient": null,
+        "bayesian_coefficient": null,
+        "class_name": null
+    },
+    "wall12": {
+        "name": "wall12",
+        "type": "MESH",
+        "location": [
+            4.070328235626221,
+            0.42641371488571167,
+            1.9857921600341797
+        ],
+        "dimensions": [
+            2.3373661041259766,
+            0.12382571399211884,
+            3.6576006412506104
+        ],
+        "rotation": [
+            7.549790126404332e-08,
+            2.1254750161557957e-22,
+            3.141592502593994
+        ],
+        "family_name": "wall12",
+        "danger_coefficient": null,
+        "bayesian_coefficient": null,
+        "class_name": null
+    },
+    "wall13": {
+        "name": "wall13",
+        "type": "MESH",
+        "location": [
+            0.741235613822937,
+            -1.967429280281067,
+            1.9857888221740723
+        ],
+        "dimensions": [
+            1.783086895942688,
+            0.12382568418979645,
+            3.657599687576294
+        ],
+        "rotation": [
+            -4.371138473402425e-08,
+            1.1724465943260495e-15,
+            -1.5707961320877075
+        ],
+        "family_name": "wall13",
+        "danger_coefficient": null,
+        "bayesian_coefficient": null,
+        "class_name": null
+    },
+    "wall14": {
+        "name": "wall14",
+        "type": "MESH",
+        "location": [
+            0.7412294745445251,
+            2.349024534225464,
+            1.9857888221740723
+        ],
+        "dimensions": [
+            0.9489710927009583,
+            0.12382568418979645,
+            3.657599687576294
+        ],
+        "rotation": [
+            -4.371138473402425e-08,
+            1.1724465943260495e-15,
+            -1.5707961320877075
+        ],
+        "family_name": "wall14",
+        "danger_coefficient": null,
+        "bayesian_coefficient": null,
+        "class_name": null
+    },
+    "wall15": {
+        "name": "wall15",
+        "type": "MESH",
+        "location": [
+            -4.876800537109375,
+            0.4968922734260559,
+            1.9857864379882812
+        ],
+        "dimensions": [
+            0.5476879477500916,
+            0.12382571399211884,
+            3.6576006412506104
+        ],
+        "rotation": [
+            -1.6292068494294654e-07,
+            0.0,
+            0.0
+        ],
+        "family_name": "wall15",
+        "danger_coefficient": null,
+        "bayesian_coefficient": null,
+        "class_name": null
+    },
+    "wall16": {
+        "name": "wall16",
+        "type": "MESH",
+        "location": [
+            2.9773550033569336,
+            2.9067184925079346,
+            1.9857861995697021
+        ],
+        "dimensions": [
+            4.594225883483887,
+            0.12382327765226364,
+            3.6576006412506104
+        ],
+        "rotation": [
+            -1.6292068494294654e-07,
+            0.0,
+            0.0
+        ],
+        "family_name": "wall16",
+        "danger_coefficient": null,
+        "bayesian_coefficient": null,
+        "class_name": null
+    },
+    "wall2": {
+        "name": "wall2",
+        "type": "MESH",
+        "location": [
+            5.212554931640625,
+            -0.06190752983093262,
+            1.9857866764068604
+        ],
+        "dimensions": [
+            0.12382568418979645,
+            5.813429355621338,
+            3.6576006412506104
+        ],
+        "rotation": [
+            -1.6292068494294654e-07,
+            0.0,
+            0.0
+        ],
+        "family_name": "wall2",
+        "danger_coefficient": null,
+        "bayesian_coefficient": null,
+        "class_name": null
+    },
+    "wall3": {
+        "name": "wall3",
+        "type": "MESH",
+        "location": [
+            -2.2971134185791016,
+            2.9067184925079346,
+            1.9857861995697021
+        ],
+        "dimensions": [
+            5.9547119140625,
+            0.12382327765226364,
+            3.6576006412506104
+        ],
+        "rotation": [
+            -1.6292068494294654e-07,
+            0.0,
+            0.0
+        ],
+        "family_name": "wall3",
+        "danger_coefficient": null,
+        "bayesian_coefficient": null,
+        "class_name": null
+    },
+    "wall4": {
+        "name": "wall4",
+        "type": "MESH",
+        "location": [
+            -0.061913490295410156,
+            -2.9067094326019287,
+            1.9857871532440186
+        ],
+        "dimensions": [
+            10.425111770629883,
+            0.12382571399211884,
+            3.6576006412506104
+        ],
+        "rotation": [
+            -1.6292068494294654e-07,
+            0.0,
+            0.0
+        ],
+        "family_name": "wall4",
+        "danger_coefficient": null,
+        "bayesian_coefficient": null,
+        "class_name": null
+    },
+    "wall5": {
+        "name": "wall5",
+        "type": "MESH",
+        "location": [
+            -2.8138437271118164,
+            -1.2049089670181274,
+            1.98578679561615
+        ],
+        "dimensions": [
+            0.12382568418979645,
+            3.2797763347625732,
+            3.6576006412506104
+        ],
+        "rotation": [
+            -1.6292068494294654e-07,
+            0.0,
+            0.0
+        ],
+        "family_name": "wall5",
+        "danger_coefficient": null,
+        "bayesian_coefficient": null,
+        "class_name": null
+    },
+    "wall6": {
+        "name": "wall6",
+        "type": "MESH",
+        "location": [
+            0.07064247131347656,
+            -1.1398236751556396,
+            1.9857866764068604
+        ],
+        "dimensions": [
+            1.2191991806030273,
+            0.12382815778255463,
+            3.6576006412506104
+        ],
+        "rotation": [
+            -1.6292068494294654e-07,
+            0.0,
+            0.0
+        ],
+        "family_name": "wall6",
+        "danger_coefficient": null,
+        "bayesian_coefficient": null,
+        "class_name": null
+    },
+    "wall7": {
+        "name": "wall7",
+        "type": "MESH",
+        "location": [
+            -1.9192886352539062,
+            0.4968922734260559,
+            1.9857864379882812
+        ],
+        "dimensions": [
+            3.008307933807373,
+            0.12382571399211884,
+            3.6576006412506104
+        ],
+        "rotation": [
+            -1.6292068494294654e-07,
+            0.0,
+            0.0
+        ],
+        "family_name": "wall7",
+        "danger_coefficient": null,
+        "bayesian_coefficient": null,
+        "class_name": null
+    },
+    "wall8": {
+        "name": "wall8",
+        "type": "MESH",
+        "location": [
+            -4.876800537109375,
+            0.4968922734260559,
+            1.9857864379882812
+        ],
+        "dimensions": [
+            0.5476879477500916,
+            0.12382571399211884,
+            3.6576006412506104
+        ],
+        "rotation": [
+            -1.6292068494294654e-07,
+            0.0,
+            0.0
+        ],
+        "family_name": "wall8",
+        "danger_coefficient": null,
+        "bayesian_coefficient": null,
+        "class_name": null
+    },
+    "wall9": {
+        "name": "wall9",
+        "type": "MESH",
+        "location": [
+            -5.200745105743408,
+            -0.7033493518829346,
+            1.9857916831970215
+        ],
+        "dimensions": [
+            4.297565937042236,
+            0.12382568418979645,
+            3.657599687576294
+        ],
+        "rotation": [
+            7.54978870531886e-08,
+            -3.851848869837514e-15,
+            -1.5707961320877075
+        ],
+        "family_name": "wall9",
+        "danger_coefficient": null,
+        "bayesian_coefficient": null,
+        "class_name": null
+    }
+}

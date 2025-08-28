@@ -1,0 +1,34 @@
+<launch>
+  <!-- Arguments -->
+   <arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>
+  <arg name="open_rviz" default="true"/>
+  <arg name="move_forward_only" default="false"/>
+
+
+  <!-- Turtlebot3 -->
+  <include file="$(find turtlebot3_bringup)/launch/turtlebot3_remote.launch">
+    <arg name="model" value="$(arg model)" />
+  </include>
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_to_odom" args="0 0 0 0 0 0 map odom" />
+  <param name="robot_description" 
+        command="$(find xacro)/xacro $(find turtlebot3_description)/urdf/turtlebot3_$(arg model).urdf.xacro"/>
+
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" output="screen"/>
+
+  <!-- AMCL -->
+  <!--include file="$(find turtlebot3_navigation)/launch/amcl.launch"-->
+  
+  <!-- Custom Pathfinding -->
+  <node pkg="pathfinding_simulation" type="pathfinding_node" name="pathfinding_node" output="screen">
+    <param name="api_key" value="API_KEY"/>
+    <param name="mesh_file" value="$(find pathfinding_simulation)/models/dicelab_bim/meshes/dicelab_BIM.stl"/>
+  </node>
+
+  <node pkg="pathfinding_simulation" type="path_follower_node" name="path_follower" output="screen"/>
+
+  <!-- rviz -->
+  <group if="$(arg open_rviz)"> 
+    <node pkg="rviz" type="rviz" name="rviz" required="true"
+          args="-d $(find turtlebot3_navigation)/rviz/turtlebot3_navigation.rviz"/>
+  </group>
+</launch>

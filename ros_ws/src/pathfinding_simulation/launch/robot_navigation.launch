@@ -1,0 +1,45 @@
+<launch>
+    <arg name="rname" default="/"/>
+    <arg name="rviz" default="true"/>
+    <arg name="base_frame" default="/base"/>
+    <arg name="odom_frame" default="/odom"/>
+    
+    <!-- Pathfinding custom nodes -->
+    <node pkg="pathfinding_simulation" type="pathfinding_node" name="pathfinding_node" output="screen">
+        <param name="api_key" value="API_KEY"/>
+        <param name="mesh_file" value="$(find pathfinding_simulation)/models/dicelab_bim/meshes/dicelab_BIM.stl"/>
+        <param name="auto_publish_grid" value="true"/>
+        
+        <!-- Go1 Robot Configuration Space Parameters -->
+        <param name="robot_radius" value="0.14"/>
+        <param name="cell_size" value="0.025"/>
+        <param name="max_detect_z" value="1.5"/>
+    </node>
+
+    <!-- Map Server - loads generated map -->
+    <node name="map_server" pkg="map_server" type="map_server" 
+        args="$(find pathfinding_simulation)/maps/dicelab_map.yaml">
+        <param name="frame_id" value="map" />
+    </node>
+
+    <!-- AMCL Localization -->
+    <include file="$(find pathfinding_simulation)/launch/amcl.launch">
+        <arg name="base_frame" value="$(arg base_frame)"/>
+        <arg name="odom_frame" value="$(arg odom_frame)"/>
+        <arg name="scan" value="scan"/>  <!--remapped laser topic -->
+    </include>
+
+    <!-- Path follower node -->
+    <node pkg="pathfinding_simulation" type="path_follower_node" name="path_follower" output="screen">
+        <param name="show_grid" value="true"/>
+        <param name="grid_alpha" value="0.3"/>
+        <param name="auto_publish_grid" value="true"/>
+        <param name="linear_speed" value="0.2"/>
+        <param name="angular_speed" value="0.3"/>
+        <param name="goal_tolerance" value="0.2"/>
+    </node>
+     
+    <node if="$(arg rviz)" pkg="rviz" type="rviz" name="rviz"
+        args="-d $(find unitree_move_base)/rviz/move_base.rviz"/>
+
+</launch>
