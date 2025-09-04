@@ -68,7 +68,7 @@ python main_pipeline.py
 Context: "Workstation is very very empty today, go to destination"
 Result: Path goes directly through workstation area (low danger assessment)
 ```
-![Empty Office Pathfinding](images/empty_scenario.png)
+![Empty Office Pathfinding](bayesian_pathfinding/images/empty_scenario.png)
 
 
 **Scenario 2 - Busy Office:**  
