@@ -76,7 +76,7 @@ Result: Path goes directly through workstation area (low danger assessment)
 Context: "Workstation is very very busy today, go to destination"
 Result: Path avoids workstation area (high danger assessment)
 ```
-![Busy Office Pathfinding](images/busy_scenario.png)
+![Busy Office Pathfinding](bayesian_python/images/busy_scenario.png)
 
 The same physical environment produces different optimal paths based on real-time context.
 
